@@ -5,7 +5,7 @@
 .gnb {height:70px}
 .gnb li {float:left;width:142px; margin-left:66px;/*text-align:right;*/line-height:70px;box-sizing:border-box; list-style: none;}
 .gnb li  a {display:block;font-size:18px;font-weight:bold;color:#fff; text-decoration: none;}
-.gnb li  a span {position:relative;display:inline-block;line-height:3.8}
+.gnb li  a span {position:relative;display:inline-block; line-height:3.8; font-weight: bold; color: #fff;}
 .gnb li  a span:before {content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#fff;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 .gnb li:hover  a  span:before  {width:100%}
 .gnb li:hover .gnb__wrap {display:block}

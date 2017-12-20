@@ -8,7 +8,7 @@
 <!-- 스타일 적용을 위한 CSS -->
 <style>
 td {
-	color: blue;
+	color: #4a4947;
 }
 </style>
 
@@ -136,59 +136,139 @@ $(document).ready(function () {
         	$('#categori_select').attr('disabled',true);
         }
     });
+    
+    $('input[value=user]').on('click',function () {
+        if ($(this).is(':checked')) {
+            $('#categori_select').attr('disabled',true);
+        } else {
+        	$('#categori_select').attr('disabled',false);
+        }
+    });
+    
+    $('input[value=manager]').on('click',function () {
+        if ($(this).is(':checked')) {
+            $('#categori_select').attr('disabled',true);
+        } else {
+        	$('#categori_select').attr('disabled',false);
+        }
+    });
 });
 </script>
 
+<!-- 스타일 적용을 위한 CSS -->
+
+<style>
+
+table{
+border: 1px solid #4a4947; 
+border-radius: 5px;
+margin-top: 10px;
+
+}
+
+th{
+
+padding: 10px 10px 10px 10px;
+color: #fff;
+background: #ff2f4a;
+border: 1px solid #4a4947; 
+border-radius: 5px;
+
+}
+
+td{
+
+color: #4a4947;
+border: 1px solid #4a4947; 
+padding: 7px 8px 7px 8px;
+border-radius: 5px;
+
+}
+
+input{
+
+border-radius: 5px;
+border-style: groove;
+padding: 3px 0 3px 0;
+
+}
+
+
+  
+  .center0{
+  	
+
+  	margin:28px 55px 0px 55px;
+  
+  }
+  
+    .center0 form input.clear{  border-radius:5px; border:1px solid #4a4947;  
+background:#4a4947;  color: #fff; cursor: pointer; width: 100px; height: 30px; margin-top: 20px;}
+
+.center0 form input.clear:hover{border-radius:5px; color:#fff; background: #ff2f4a; width: 100px; height: 30px;}
+  
+      .center0 form input.search1{  border-radius:5px; border:1px solid #4a4947;  
+background:#4a4947;  color: #fff; cursor: pointer; width: 100px; height: 26px; }
+
+.center0 form input.search1:hover{border-radius:5px; color:#fff; background: #ff2f4a; width: 100px; height: 26px;}
+  
+  
+
+</style>
+
 </head>
 <body>
-	<center>
-		<h1>회 원 가 입</h1>
+	<center class="center0">
+		<div class="line" style=" border-top: 2px solid #ff2f4a; width:100px;"></div>
+		<p style="color: #4a4947; margin-bottom: 20px;" ><strong style="font-size: 29px;">회 원 가 입</strong></p>
 		<form id="join" name="join" action="joinOk" method="post">
-		가 입 유 형 : &nbsp;&nbsp;
-			<input type="checkbox" name="check"  value="user"  onclick="checkboxCheck(this)" >일반 회원 &nbsp;&nbsp;
-			<input type="checkbox" name="check"  value="company"  onclick="checkboxCheck(this)">기 업 &nbsp;&nbsp;
-			<input type="checkbox" name="check"  value="manager"  onclick="checkboxCheck(this)">관 리 자
-			
-			<table border="1" width="650" height="150">
+		<div style="color: #4a4947; text-align: left; display: block; width: 670px;">
+		<strong>가 입 유 형 : &nbsp;&nbsp;</strong>
+			<input style="color: #4a4947" type="checkbox" name="check"  value="user"  onclick="checkboxCheck(this)" >일반 회원 &nbsp;&nbsp;
+			<input style="color: #4a4947" type="checkbox" name="check"  value="company"  onclick="checkboxCheck(this)">기 업 &nbsp;&nbsp;
+			<input style="color: #4a4947" type="checkbox" name="check"  value="manager"  onclick="checkboxCheck(this)">관 리 자
+			</div>
+			<table border="1" width="695" height="150">
 				<tr>
-					<td>*이 름</td>
+					<th> 이 름 *</th>
 					<td><input type="text" id="name" name="name" /></td>
 				</tr>
 				<tr>
-					<td>성 별</td>
+					<th> 성 별 </th>
 					<td><input type="radio" id="gender" name="gender" value="남"
 						checked />남 <input type="radio" id="gender" name="gender"
 						value="여" />여</td>
 				</tr>
 				<tr>
-					<td>*아 이 디</td>
+					<th> 아 이 디 *</th>
 					<td><input type="text" id="id" name="id" /> <input
-						type="hidden" name="reid" id="reid"> <input type="button"
-						value="중복 확인" onclick="idCheck()" /></td>
+						type="hidden" name="reid" id="reid">
+						 <input class="search1" type="button" value="중복 확인" onclick="idCheck()" /></td>
 				</tr>
 				<tr>
-					<td>*비 밀 번 호</td>
+					<th> 비 밀 번 호 *</th>
 					<td><input type="password" id="pw" name="pw" /></td>
 				</tr>
 				<tr>
-					<td>비 밀 번 호 확 인</td>
-					<td><input type="password" id="pw_ok" name="pw_ok"><strong name="check" style="font-size : 14px; color : red;"></strong></td>
+					<th>비 밀 번 호 확 인</th>
+					<td><input type="password" id="pw_ok" name="pw_ok">
+					<strong name="check" style="font-size : 14px; color : red;"></strong></td>
 				</tr>
 				<tr>
-					<td rowspan="2">주 소</td>
+					<th rowspan="2">주 소</th>
 					<td><input type="text" id="addr" name="addr" /> <input
-						type="button" value="주소 찾기" onclick="post_search()" /></td>
+						type="button" class="search1" value="주소 찾기" onclick="post_search()" /></td>
 				</tr>
 				<tr>
 					<td><input type="text" id="addr_f" name="addr_f" /> <input
 						type="text" id="addr_b" name="addr_b" /></td>
 				</tr>
 				<tr>
-					<td>이 메 일</td>
+					<th>이 메 일</th>
 					<td><input type="text" name="email_id" />@<input type="text"
-						name="email_addr" disabled /> <select style="font:inherit;" name="email_select"
-						onchange="emailCheck()">
-							<option value=" ">선택하세요 ▼</option>
+						name="email_addr" disabled /> 
+						<select style="font:inherit; border-radius: 5px;" name="email_select" onchange="emailCheck()">
+							<option value=" ">선택하세요 <!--  ▼--></option>
 							<option value="naver.com">naver.com</option>
 							<option value="hanmail.net">hanmail.net</option>
 							<option value="google.com">google.com</option>
@@ -198,30 +278,30 @@ $(document).ready(function () {
 					</select></td>
 				</tr>
 				<tr>
-					<td>*전 화 번 호</td>
+					<th> 전 화 번 호&nbsp;&nbsp; *</th>
 					<td><input type="text" id="tel" name="tel" /></td>
 				</tr>
 				<tr>
-					<td>자 기 소 개</td>
-					<td><textarea name="intro" cols="45" rows="10"></textarea></td>
+					<th>자 기 소 개</th>
+					<td><textarea name="intro" cols="45" rows="10" style="resize: none; overflow-y:scroll; width:515px; "></textarea></td>
 				</tr>
 				<tr>
-					<td>업체 유형</td>
-					<td><select id="categori_select" style="font:inherit;" name="categori_select" disabled>
-							<option value="없음">선택하세요 ▼</option>
+					<th>업체 유형</th>
+					<td><select id="categori_select" style="font:inherit; border-radius: 5px;" name="categori_select" disabled>
+							<option value="없음">선택하세요 <!-- ▼ --></option>
 							<option value="영화">영화</option>
 							<option value="펜션">펜션</option>
 							<option value="여행">여행</option>
 					</select></td>
 				</tr>				
 				<tr>
-					<td>자동 가입 방지</td>
+					<th>자동 가입 방지</th>
 					<td><div class="g-recaptcha"
-							data-sitekey="6LfuujQUAAAAAP-7vyBooMODx2_1omSg6dfQ7gvs"></div></td>
+							data-sitekey="6LeKvj0UAAAAAAGamZIE342ec-EtIkKaaWV7kxkW"></div></td>
 				</tr>
 			</table>
-			<br> <input type="submit" value="완료"> <input
-				type="reset" value="다시 입력">
+			<br> <input class="clear" type="submit" value="완료">
+			 <input  class="clear" type="reset" value="다시 입력">
 		</form>
 	</center>
 </body>

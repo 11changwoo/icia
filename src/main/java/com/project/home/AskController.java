@@ -7,14 +7,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.project.ask.ACommand;
+import com.project.ask.ListAsk;
 import com.project.ask.SendAsk;
+import com.project.util.Command;
 
 
 @Controller
 public class AskController {
 
-	ACommand command;
+	Command command;
 
 	@RequestMapping("/ask")
 	public String mail() {
@@ -27,8 +28,23 @@ public class AskController {
 		 model.addAttribute("request",request);
 		 
 		 command = new SendAsk();
-		 command.execute(model);
+		 try {
+			command.execute(model);
+			
+			return "ask/askOk";
+		} catch (Exception e) {
+			return "ask";
+		}
 
-		return "ask/askOk";
+		
+	}
+	
+	@RequestMapping("/askList")
+	public String askList(Model model) throws Exception {
+		
+		command = new ListAsk();
+		command.execute(model);
+		
+		return "ask/askList";
 	}
 }

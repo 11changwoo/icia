@@ -5,13 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>1조 프로젝트</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/nav.css" />
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/nav.css" />
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/simpleBanner.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/simpleBanner.js"></script>
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/simpleBanner.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/main_style.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/simpleBanner.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/main_style.css">
 
 </head>
 <body>
@@ -25,20 +29,21 @@
 
 				<div class="logo">
 
-					<a href="main" id="logo_img"><img src="${pageContext.request.contextPath}/img/logo.png"></a>
+					<a href="main" id="logo_img"><img
+						src="${pageContext.request.contextPath}/img/logo_new.png"></a>
 
 				</div>
 
 				<ul class="nav">
 
-					<li><a href="login"
-						style="text-decoration: none;">로그인</a> <span class="sp_style">|</span></li>
-					<li><a href="join">회원가입</a> <span
+					<li><a href="login" style="text-decoration: none;">로그인</a> <span
 						class="sp_style">|</span></li>
+					<li><a href="join">회원가입</a> <span class="sp_style">|</span></li>
 					<li><a href="#">마이페이지</a> <span class="sp_style">|</span></li>
 					<li><a href="ask">문의 하기</a> <span class="sp_style">|</span></li>
-					<li class="favo"><a href="#" id="bookmark"> <img
-							src="${pageContext.request.contextPath}/img/star_img.png" width="25" height="22"></a></li>
+					<%-- <li class="favo"><a href="#" id="bookmark"> <img
+							src="${pageContext.request.contextPath}/img/star_img.png"
+							width="25" height="22"></a></li> --%>
 				</ul>
 			</div>
 
@@ -84,7 +89,7 @@
 			<div class="header-bottom">
 				<div class="header-bottom__wrap">
 					<ul class="gnb">
-						<li><a href="#"> <span>1조 소개</span>
+						<li><a href="#"> <span style="line-height: 3.8;">1조 소개</span>
 						</a>
 							<div class="gnb__wrap">
 								<div class="row">
@@ -118,42 +123,40 @@
 									</div>
 								</div>
 							</div></li>
-						<li class="s"><a href="#"> <span>예약</span>
+						<li class="s"><a href="#"> <span style="line-height: 3.8;">예약</span>
 						</a>
 							<div class="gnb__wrap gnb__wrap--small">
 								<div class="row">
 									<div class="gnb__wrap-box" style="margin-left: 260px;">
 										<div class="gnb__wrap-item">
 											<div class="gnb__wrap-tit">
-												<a href="../sum_menu2.jsp">펜션 </a>
+												<a href="#">펜션 </a>
 											</div>
 										</div>
 										<div class="gnb__wrap-item">
 											<div class="gnb__wrap-tit">
-												<a href="../sum_menu2.jsp">여행 </a>
+												<a href="#">여행 </a>
 											</div>
 										</div>
 										<div class="gnb__wrap-item">
 											<div class="gnb__wrap-tit">
-												<a href="../sum_menu2.jsp">영화</a>
+												<a href="#">영화</a>
+											</div>
+										</div>
+										<!-- <div class="gnb__wrap-item">
+											<div class="gnb__wrap-tit">
+												<a href="#">미용실</a>
 											</div>
 										</div>
 										<div class="gnb__wrap-item">
 											<div class="gnb__wrap-tit">
-												<a href="../sum_menu2.jsp">미용실</a>
+												<a href="#">호텔</a>
 											</div>
-										</div>
-										<div class="gnb__wrap-item">
-											<div class="gnb__wrap-tit">
-												<a href="../sum_menu2.jsp">호텔</a>
-											</div>
-										</div>
-
-
+										</div> -->
 									</div>
 								</div>
 							</div></li>
-						<li class="t"><a href="#"> <span>게시판</span>
+						<li class="t"><a href="#"> <span style="line-height: 3.8;">게시판</span>
 						</a>
 							<div class="gnb__wrap gnb__wrap--medium">
 								<div class="row">
@@ -199,69 +202,95 @@
 			<!-- data-type="hslide" data-nav-type="numeral "-->
 			<ul>
 				<li style="background: #000;"><a href="#"> <img
-						src="${pageContext.request.contextPath}/img/Pension.jpg" width="1255" height="450"></a></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/img/travel.jpg" width="1255"
+						src="${pageContext.request.contextPath}/img/Pension.jpg"
+						width="1255" height="450"></a></li>
+				<li><a href="#"><img
+						src="${pageContext.request.contextPath}/img/travel.jpg"
+						width="1255" height="450"></a></li>
+				<li><a href="#"><img
+						src="${pageContext.request.contextPath}/img/movie.jpg"
+						width="1255" height="450"></a></li>
+				<li><a href="#"><img
+						src="${pageContext.request.contextPath}/img/lech.jpg" width="1255"
 						height="450"></a></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/img/movie.jpg" width="1255"
-						height="450"></a></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/img/lech.jpg" width="1255"
-						height="450"></a></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/img/hotel.jpg" width="1255"
-						height="450"></a></li>
+				<li><a href="#"><img
+						src="${pageContext.request.contextPath}/img/hotel.jpg"
+						width="1255" height="450"></a></li>
 			</ul>
 		</div>
 
 
 		<section class="main-brandmenu">
 		<div class="row">
-			<div class="main-brandmenu__btn tab-nav">
+			<div class="main-brandmenu__btn tab-nav" style="bordor: none;">
 				<a href="#mainBrand1" class="active">사전 예약 분야</a>
 				<!--<a href="#mainBrand2">사용한 소스</a>-->
 			</div>
 			<div class="tab-item" id="mainBrand1" style="display: block;">
 				<div class="main-brandmenu__wrap">
 					<div class="bx-wrapper"
-						style="max-width: 1200px; margin-top: 30px;">
-						<div class="bx-viewport" aria-live="polite"
-							style="width: 100%; overflow: hidden; position: relative; height: 192px; margin-left: 154px;">
-							<ul class="main-brand__slider1"
-								style="width: 5215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+						style="max-width: 1200px; margin-top: 24px; position: relative;">
+
+						<div class="bx-wrapper"
+							style="max-width: 1200px; margin-top: 24px; position: relative;">
+							<div class="line"
+								style="width: 47px; border: 1px solid #4a4947; opacity: 0.5; position: absolute; top: 71px; left: 133px;"></div>
+							<div class="line"
+								style="width: 188px; border: 1px solid #4a4947; opacity: 0.5; position: absolute; top: 71px; left: 296px;"></div>
+							<div class="line"
+								style="width: 188px; border: 1px solid #4a4947; opacity: 0.5; position: absolute; top: 71px; left: 600px;"></div>
+							<p style="position: absolute; top: 43px; left: 142px;">영화</p>
+							<p style="position: absolute; top: 43px; left: 450px;">펜션</p>
+							<p style="position: absolute; top: 43px; left: 910px;">여행</p>
+							<div class="radius"
+								style="width: 5px; height: 5px; border-radius: 10px; border: 1px solid #ff2f4a; background: #ff2f4a; position: absolute; top: 68px; left: 131px;"></div>
+							<div class="line"
+								style="width: 47px; border: 1px solid #4a4947; opacity: 0.5; position: absolute; top: 71px; left: 904px;"></div>
+							<div class="radius"
+								style="width: 5px; height: 5px; border-radius: 10px; border: 1px solid #ff2f4a; background: #ff2f4a; position: absolute; top: 68px; left: 950px;"></div>
+
+							<div class="bx-viewport" aria-live="polite"
+								style="width: 100%; overflow: hidden; position: relative; height: 192px; margin-left: 180px;">
+
+								<ul class="main-brand__slider1"
+									style="width: 5215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+
+									<li aria-hidden="false"
+										style="float: left; list-style: none; position: relative; width: 118px; margin-right: 186px;"><a
+										href="#" onclick="_gaq.push([]);"> <img
+											src="${pageContext.request.contextPath}/img/menu01(2).png"
+											alt="펜션"
+											onmouseover="this.src='${pageContext.request.contextPath}/img/menu01_ov(3).png'"
+											onmouseout="this.src='${pageContext.request.contextPath}/img/menu01(2).png'">
+									</a></li>
 
 
 
+									<li aria-hidden="false"
+										style="float: left; list-style: none; position: relative; width: 118px; margin-right: 186px;"><a
+										href="#" onclick="_gaq.push([]);"> <img
+											src="${pageContext.request.contextPath}/img/menu02_ov(0).png"
+											alt="여행"
+											onmouseover="this.src='${pageContext.request.contextPath}/img/menu02_ov(0)-(1).png'"
+											onmouseout="this.src='${pageContext.request.contextPath}/img/menu02_ov(0).png'">
+									</a></li>
 
-								<li aria-hidden="false"
+
+									<li aria-hidden="false"
+										style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
+										href="#" onclick="_gaq.push([]);"><img
+											src="${pageContext.request.contextPath}/img/menu03(0).png"
+											alt="영화"
+											onmouseover="this.src='${pageContext.request.contextPath}/img/menu03_ov(0).png'"
+											onmouseout="this.src='${pageContext.request.contextPath}/img/menu03(0).png'"></a></li>
+
+
+
+									<%-- <li aria-hidden="false"
 									style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
-									href="#" target="_blank" onclick="_gaq.push([]);"> <img
-										src="${pageContext.request.contextPath}/img/menu01(2).png" alt="펜션"
-										onmouseover="this.src='${pageContext.request.contextPath}/img/menu01_ov(3).png'"
-										onmouseout="this.src='${pageContext.request.contextPath}/img/menu01(2).png'">
-								</a></li>
-
-
-
-								<li aria-hidden="false"
-									style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
-									href="#" target="_blank" onclick="_gaq.push([]);"> <img
-										src="${pageContext.request.contextPath}/img/menu02_ov(0).png" alt="여행"
-										onmouseover="this.src='${pageContext.request.contextPath}/img/menu02_ov(0) (1).png'"
-										onmouseout="this.src='${pageContext.request.contextPath}/img/menu02_ov(0).png'">
-								</a></li>
-
-
-								<li aria-hidden="false"
-									style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
-									href="#" target="_blank" onclick="_gaq.push([]);"><img
-										src="${pageContext.request.contextPath}/img/menu03(0).png" alt="영화"
-										onmouseover="this.src='${pageContext.request.contextPath}/img/menu03_ov(0).png'"
-										onmouseout="this.src='${pageContext.request.contextPath}/img/menu03(0).png'"></a></li>
-
-
-
-								<li aria-hidden="false"
-									style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
-									href="#" target="_blank" onclick="_gaq.push([]);"><img
-										src="${pageContext.request.contextPath}/img/menu04(0).png" alt="미용실"
+									href="#" onclick="_gaq.push([]);"><img
+										src="${pageContext.request.contextPath}/img/menu04(0).png"
+										alt="미용실"
 										onmouseover="this.src='${pageContext.request.contextPath}/img/menu04_ov(0)(0).png'"
 										onmouseout="this.src='${pageContext.request.contextPath}/img/menu04(0).png'"></a></li>
 
@@ -269,21 +298,22 @@
 
 								<li aria-hidden="false"
 									style="float: left; list-style: none; position: relative; width: 118px; margin-right: 52px;"><a
-									href="#" target="_blank" onclick="_gaq.push([]);"><img
-										src="${pageContext.request.contextPath}/img/menu-hpmp-off.png" alt="호텔"
+									href="#" onclick="_gaq.push([]);"><img
+										src="${pageContext.request.contextPath}/img/menu-hpmp-off.png"
+										alt="호텔"
 										onmouseover="this.src='${pageContext.request.contextPath}/img/menu-hpmp.png'"
-										onmouseout="this.src='${pageContext.request.contextPath}/img/menu-hpmp-off.png'"></a></li>
+										onmouseout="this.src='${pageContext.request.contextPath}/img/menu-hpmp-off.png'"></a></li> --%>
 
 
 
-							</ul>
+								</ul>
+							</div>
+							<div class="bx-controls"></div>
 						</div>
-						<div class="bx-controls"></div>
-					</div>
 
+					</div>
 				</div>
-			</div>
-			<!--	<div class="tab-item" id="mainBrand2" style="display: none;">
+				<!--	<div class="tab-item" id="mainBrand2" style="display: none;">
 							<div class="main-brandmenu__wrap">
 								<div class="bx-wrapper" style="max-width: 968px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 192px;"><ul class="main-brand__slider2" style="width: 6215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
 
@@ -318,15 +348,17 @@
 								
 							</div>
 						</div>-->
-		</div>
-
+			</div>
 		</section>
 
 
 		<link rel="stylesheet" type="text/css" media="screen"
 			href="${pageContext.request.contextPath}/css/als_demo.css" />
-		<link rel="icon" href="${pageContext.request.contextPath}/images/favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.ico"
+		<link rel="icon"
+			href="${pageContext.request.contextPath}/images/favicon.ico"
+			type="image/x-icon" />
+		<link rel="shortcut icon"
+			href="${pageContext.request.contextPath}/images/favicon.ico"
 			type="image/x-icon" />
 		<meta name="robots" content="index,follow" />
 		<meta name="keywords"
@@ -336,8 +368,10 @@
 		<meta name="author" content="Federica Sibella - musings.it" />
 		<meta name="geo.placename"
 			content="via Generale Alberico Albricci 1, 24128 Bergamo, Italy">
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.alsEN-1.0.min.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript"
+			src="${pageContext.request.contextPath}/js/jquery.alsEN-1.0.min.js"></script>
 
 
 		<script type="text/javascript">
@@ -363,18 +397,23 @@
 								});
 
 								//logo hover
-								$("#logo_img").hover(function() {
-									$(this).attr("src", "${pageContext.request.contextPath}/img/logo.png");
-								}, function() {
-									$(this).attr("src", "${pageContext.request.contextPath}/img/logo.png");
-								});
+								$("#logo_img")
+										.hover(
+												function() {
+													$(this)
+															.attr("src",
+																	"${pageContext.request.contextPath}/img/logo.png");
+												},
+												function() {
+													$(this)
+															.attr("src",
+																	"${pageContext.request.contextPath}/img/logo.png");
+												});
 
 								//logo click
-								$("#logo_img")
-										.click(
-												function() {
-													location.href = "now/main";
-												});
+								$("#logo_img").click(function() {
+									location.href = "now/main";
+								});
 
 								$("a[href^='http://']")
 										.attr("target", "_blank");
@@ -385,47 +424,58 @@
 
 		<section id="content">
 
-		<div id="lista1" class="als-container">
-			<span class="als-prev"><img
-				src="${pageContext.request.contextPath}/images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
-			<div class="als-viewport">
+			<div id="lista1" class="als-container">
+				<span class="als-prev" style="left: -56px;"><img
+					src="${pageContext.request.contextPath}/images/thin_left_arrow_333.png"
+					alt="prev" title="previous" /></span>
+				<div class="als-viewport">
 				<ul class="als-wrapper">
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/calculator.png" alt="jsp" title="jsp" />jsp</li>
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/light_bulb.png" alt="eclipse"
-						title="eclipse" />eclipse</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/card.png"
-						alt="javascript" title="javascript" />javascript</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/chess.png"
-						alt="css" title="css" />css</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/clock.png"
-						alt="oracle" title="oracle" />oracle</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/cut.png"
-						alt="photoshop" title="photoshop" />photoshop</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/heart.png"
-						alt="program" title="program" />program</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/map.png"
-						alt="program" title="program" />program</li>
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/mobile_phone.png" alt="program"
-						title="program" />program</li>
-					<li class="als-item"><img src="${pageContext.request.contextPath}/images/als-images/camera.png"
-						alt="program" title="camera" />program</li>
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/music_note.png" alt="program"
-						title="program" />program</li>
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/protection.png" alt="program"
-						title="program" />program</li>
-					<li class="als-item"><img
-						src="${pageContext.request.contextPath}/images/als-images/television.png" alt="program"
-						title="program" />program</li>
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/sublime.png" alt="sublime"
+						title="sublime" width="100px" height="80px" /><span
+						style="margin-left: -24px;">SUBLIME</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/HTML5.png" alt="HTML5"
+						title="HTML5" width="100px" height="80px" /><span
+						style="margin-left: -24px;">HTML5</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/css.png" alt="css"
+						title="css" width="95px" height="80px" /><span
+						style="margin-left: -25px;">CSS</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/javascript.png"
+						alt="javascript" title="javascript" width="100px" height="80px" /><span
+						style="margin-left: -31px;">JAVASCRIPT</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/jquery.png" alt="jquery"
+						title="jquery" width="280px" height="80px" /><span
+						style="margin-left: 23px;">JQUERY</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/photoshop.png"
+						alt="photoshop" title="photoshop" width="100px" height="80px" /><span
+						style="margin-left: -24px;">PHOTOSHOP</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/jsp.png" alt="jsp"
+						title="jsp" width="100px" height="80px" /><span
+						style="margin-left: -24px;">JSP</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/eclipse.png" alt="eclipse"
+						title="eclipse" width="200px" height="80px" />ECLIPSE</li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/oracle.jpg" alt="oracle"
+						title="oracle" width="130px" height="80px" />ORACLE</li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/SQLDeveloper.png"
+						alt="SQLDeveloper" title="SQLDeveloper" width="100px"
+						height="80px" /><span style="margin-left: -24px;">SQLDeveloper</span></li>
+
+					<li class="als-item"><img src="${pageContext.request.contextPath}/img/spring.png" alt="spring"
+						title="spring" width="200px" height="80px" />SPRING</li>
 				</ul>
 			</div>
-			<span class="als-next"><img
-				src="${pageContext.request.contextPath}/images/thin_right_arrow_333.png" alt="next" title="next" /></span>
-		</div>
+				<span class="als-next" style="right: -24px;"><img
+					src="${pageContext.request.contextPath}/images/thin_right_arrow_333.png"
+					alt="next" title="next" /></span>
+			</div>
 		</section>
 
 
@@ -443,9 +493,10 @@
 			<div class="footer__copyright">
 				<div class="row">
 					<div class="footer__copyright-logo">
-						<img src="${pageContext.request.contextPath}/images/renewal/logo_gray.png" alt="1조 소개">
+						<img src="${pageContext.request.contextPath}/img/logo_gray.png"
+							alt="1조 소개">
 					</div>
-					<div class="footer__copyright-addr">
+					<div class="footer__copyright-addr" style="line-height: 28px">
 						조장 : 임현택 , 이창우 , 유소희 , 김지훈 <br> COPYRIGHT(C) ICIA
 						PHARMACEUTICAL CO., LTD. ALL RIGHTS RESERVED
 					</div>

@@ -7,8 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.ui.Model;
 
 import com.project.dao.MemberDAO;
+import com.project.util.Command;
 
-public class IdCheck implements JCommand{
+public class IdCheck implements Command{
 
 	@Override
 	public void execute(Model model) {

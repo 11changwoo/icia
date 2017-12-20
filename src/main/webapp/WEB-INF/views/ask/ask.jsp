@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>이메일 문의하기</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <script src="${pageContext.request.contextPath }/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath }/js/jquery.dropotron.min.js"></script>
 <script src="${pageContext.request.contextPath }/js/skel.min.js"></script>
@@ -17,6 +16,7 @@
    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/style.css" />
    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/style-wide.css" />
 </noscript>
+
 </head>
 <body>
    <div class="wrapper style1">
@@ -36,9 +36,7 @@
                            style="position: absolute; right: 20px; top: 33px; z-index: 9999999;">
                            <option>영화</option>
                            <option>펜션</option>
-                           <option>호텔</option>
                            <option>여행</option>
-                           <option>미용실</option>
                         </select>
                      </div>
                   </div>
@@ -77,6 +75,6 @@
          </div>
       </div>
       
-      <%@ include file="footer.jsp"%>
+      <%@ include file="../util/footer.jsp"%>
 </body>
 </html>

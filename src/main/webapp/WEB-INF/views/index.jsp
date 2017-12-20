@@ -8,7 +8,10 @@
 </head>
 <body>
 <%
-	response.sendRedirect("main");
+	if(session.getAttribute("loginUser") == null)
+		response.sendRedirect("main");
+	else
+		response.sendRedirect("main_login");
 %>
 </body>
 </html>

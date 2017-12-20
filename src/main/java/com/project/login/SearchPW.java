@@ -7,8 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.ui.Model;
 
 import com.project.dao.MemberDAO;
+import com.project.util.Command;
 
-public class SearchPW implements LCommand{
+public class SearchPW implements Command{
 
 	@Override
 	public void execute(Model model) {

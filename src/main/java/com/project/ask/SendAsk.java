@@ -8,11 +8,12 @@ import org.springframework.ui.Model;
 
 import com.project.dao.AskDAO;
 import com.project.dto.AskVO;
+import com.project.util.Command;
 
-public class SendAsk implements ACommand {
+public class SendAsk implements Command {
 	
 	@Override
-	public void execute(Model model) {
+	public void execute(Model model) throws Exception {
 		Map<String, Object> map = model.asMap();
 		HttpServletRequest request = (HttpServletRequest) map.get("request");
 		
@@ -34,6 +35,7 @@ public class SendAsk implements ACommand {
 			System.out.println("문의 저장 완료");
 		} else {
 			System.out.println("문의 저장 실패");
+			throw new Exception("문의저장 실패");
 		}
 	}
 

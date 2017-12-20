@@ -3,9 +3,11 @@ package com.project.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 import com.project.dto.AskVO;
 import com.project.util.Constant;
@@ -25,6 +27,7 @@ public class AskDAO {
 //		content varchar2(3000),
 //		category varchar2(20)
 //	);
+	//DB에 데이터 삽입
 	public int insertAsk(final AskVO aVo) {
 		int ps = template.update(new PreparedStatementCreator() {
 			@Override
@@ -47,5 +50,22 @@ public class AskDAO {
 		else {
 			return 0;
 		}
-	} 
+	}
+	
+	public ArrayList<AskVO> selectAsk() {
+		String sql = "select * from user_ask";
+		ArrayList<AskVO> aVoList = new ArrayList<AskVO>();
+		AskVO aVo = null;
+		SqlRowSet srs = template.queryForRowSet(sql);
+		while(srs.next()) {
+			aVo = new AskVO();
+			aVo.setName(srs.getString("name"));
+			aVo.setEmail(srs.getString("email"));
+			aVo.setContent(srs.getString("content"));
+			aVo.setCategory(srs.getString("category"));
+			
+			aVoList.add(aVo);
+		}
+		return aVoList;
+	}
 }

@@ -29,7 +29,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea
 
  
 .main-brandmenu {overflow:hidden;max-height:250px;padding-top:18px;border-top:1px solid #ff2f4a;background:#f5f5f5}
-.main-brandmenu__btn {border-bottom:1px solid #a9a8ad}
+/* .main-brandmenu__btn {border-bottom:1px solid #a9a8ad} */
 .main-brandmenu__btn a {display:inline-block;position:relative;top:3px;padding:0 5px;border-bottom:3px solid transparent;font-size:18px;color:#a9a8ad;line-height:46px;vertical-align:top}
 .main-brandmenu__btn a.active {color:#333;border-bottom:3px solid #ff2f4a; text-decoration: none;}
 .main-brandmenu__wrap {position:relative;}
@@ -53,7 +53,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,input,textarea
 
 select#slt-lang  {padding:4px 8px;border:1px solid #dedede;-webkit-appearance:menulist;font-size:13px}
 .main-brandmenu {overflow:hidden;max-height:250px;padding-top:18px;border-top:1px solid #ff2f4a;background:#f5f5f5}
-.main-brandmenu__btn {border-bottom:1px solid #a9a8ad}
+/* .main-brandmenu__btn {border-bottom:1px solid #a9a8ad} */
 .main-brandmenu__btn a {display:inline-block;position:relative;top:3px;padding:0 5px;border-bottom:3px solid transparent;font-size:18px;color:#a9a8ad;line-height:46px;vertical-align:top}
 .main-brandmenu__btn a.active {color:#333;border-bottom:3px solid #ff2f4a}
 .main-brandmenu__wrap {position:relative}
@@ -109,5 +109,5 @@ select#slt-lang  {padding:4px 8px;border:1px solid #dedede;-webkit-appearance:me
 .footer__sitemap-list li a:hover {color:#eee}
 
 .footer__copyright {padding:30px 0}
-.footer__copyright-logo, .footer__copyright-addr {float:left;font-size:12px;color:#7b7b7b;line-height:20px}
+.footer__copyright-logo, .footer__copyright-addr {float:left; font-size:12px;color:#7b7b7b;}
 .footer__copyright-addr {margin-left:24px}

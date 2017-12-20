@@ -22,12 +22,12 @@ function idCheck() {
 		alert("아이디를 입력해주세요.");
 		document.join.id.value.focus();
 	} else {
-		var url = "idCheck?id=" + document.join.id.value;
+		var url = "idCheck.do?id=" + document.join.id.value;
 		window.open(url,"아이디 중복확인","toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=450, height=200");		
 	}
 }
 
-// 아이디 중복확인 체크 후 사용
+//아이디 중복확인 체크 후 사용
 function idok(id) {
 	opener.join.id.value = document.join.id.value;
 	opener.join.reid.value = document.join.id.value;

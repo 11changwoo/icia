@@ -11,7 +11,7 @@
 	request.setCharacterEncoding("utf-8");
 
     session.invalidate();
-    response.sendRedirect("now_now/main.jsp");
+    response.sendRedirect("now/main");
 %>
 </body>
 </html>

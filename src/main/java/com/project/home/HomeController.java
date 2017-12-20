@@ -24,7 +24,7 @@ public class HomeController {
 	
 	@RequestMapping(value="/",method = RequestMethod.GET)
 	public String home() {
-
+		
 		return "index";
 	}
 	//메인화면으로
@@ -38,5 +38,29 @@ public class HomeController {
 		
 		return "now/main_login";
 	}
-
+	
+	@RequestMapping("sub_1")
+	public String sub() {
+		return "now/sub_1";
+	}
+	
+	@RequestMapping("pwf")
+	public String pwf() {
+		return "company/pwriteForm";
+	}
+	
+	@RequestMapping("mwf")
+	public String mwf() {
+		return "company/mwriteForm";
+	}
+	
+	@RequestMapping("twf")
+	public String twf() {
+		return "company/twriteForm";
+	}
+	
+	@RequestMapping("board")
+	public String board() {
+		return "board/boardList";
+	}
 }

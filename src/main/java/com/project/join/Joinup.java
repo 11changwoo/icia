@@ -9,8 +9,9 @@ import org.springframework.ui.Model;
 
 import com.project.dao.MemberDAO;
 import com.project.dto.MemberVO;
+import com.project.util.Command;
 
-public class Joinup implements JCommand{
+public class Joinup implements Command{
 
 	@Override
 	public void execute(Model model) {

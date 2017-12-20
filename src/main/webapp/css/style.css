@@ -385,6 +385,11 @@
 
 	table {
 		width: 100%;
+		
+	}
+	
+	table. td{
+	border: 1px solid;
 	}
 
 		table.default {
@@ -397,12 +402,13 @@
 
 			table.default td {
 				padding: 0.5em 1em 0.5em 1em;
+				
 			}
 
 			table.default th {
 				font-weight: 700;
 				padding: 0.5em 1em 0.5em 1em;
-				text-align: left;
+				text-align: center;
 			}
 
 			table.default thead {
@@ -591,6 +597,7 @@
 		background: #FFF;
 		padding: 6em 4em 6em 4em;
 		border-radius: 6px;
+		margin-top: 50px;
 	}
 
 /* Sidebar */
