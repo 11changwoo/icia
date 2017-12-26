@@ -1,0 +1,267 @@
+--회원 테이블
+create table member_user (
+id varchar2(20),
+pw varchar2(20),
+name varchar2(20),
+gender varchar2(20),
+address varchar2(200),
+email varchar2(200),
+tel varchar2(15),
+intro varchar2(500),
+reg TIMESTAMP,
+business varchar2(30),
+type varchar2(50)
+);
+
+--문의사항 테이블
+create table user_ask(
+	name varchar2(30),
+	email varchar2(50),
+	content varchar2(3000),
+	category varchar2(20)
+);
+
+--펜션 예약 정보 테이블
+create table infor (
+id varchar2(40),
+place varchar2(40),
+pname varchar2(40),
+proom varchar2(40),
+personnel varchar2(40),
+pprice number,
+checkin varchar2(40),
+checkout varchar2(40),
+name varchar2(40),
+email varchar2(40),
+tel number,
+questions varchar2(80),
+card varchar2(40),
+cardnumber varchar2(60),
+cardpass number,
+cardterm number,
+cardidnumber number,
+bank varchar2(40),
+banknumber number,
+bankpass number,
+bankidnumber varchar2(40),
+bankmaster varchar2(40)
+);
+
+--영화 예약 정보 테이블
+create table minfor (
+mplace varchar2(40),
+mname varchar2(200),
+mroom varchar2(40),
+mpersonnel varchar2(40),
+mprice number,
+mday varchar2(40),
+seat varchar2(40),
+id varchar2(40),
+name varchar2(40),
+email varchar2(40),
+tel number,
+questions varchar2(80),
+card varchar2(40),
+cardnumber varchar2(60),
+cardpass number,
+cardterm number,
+cardidnumber number,
+bank varchar2(40),
+banknumber number,
+bankpass number,
+bankidnumber varchar2(40),
+bankmaster varchar2(40)
+);
+
+--여행 예약 정보 테이블
+create table tinfor (
+tplace varchar2(40),
+tname varchar2(200),
+tvehicle varchar2(40),
+tpersonnel varchar2(40),
+tprice number,
+tstart varchar2(40),
+tend varchar2(40),
+id varchar2(40),
+name varchar2(40),
+email varchar2(40),
+tel number,
+questions varchar2(80),
+card varchar2(40),
+cardnumber varchar2(60),
+cardpass number,
+cardterm number,
+cardidnumber number,
+bank varchar2(40),
+banknumber number,
+bankpass number,
+bankidnumber varchar2(40),
+bankmaster varchar2(40)
+);
+
+--업체/펜션 등록 테이블
+create table pension(
+num number(6), --시퀀스
+pplace varchar2(50),--장소
+pname varchar2(50),--이름
+proom varchar2(50),--방
+pprice varchar2(50),--가격
+ppersonnel_min varchar2(50),--기본인원
+ppersonnel_max varchar2(50),--최대인원
+pstart varchar2(500),--사용가능시작
+pend varchar2(500),--사용가능 끝
+ponday varchar2(50),--사용
+pm varchar2(2000),--추가입력
+pimg varchar2(2000), --이미지
+now number(1) default '0'-- 진행사항
+);
+
+--업체/펜션 시퀀스
+create sequence pension_seq start with 1 increment by 1;
+
+--업체/여행 등록 테이블
+create table travel(
+num number(6), --시퀀스
+tname varchar2(50),
+tplace varchar2(50),
+tvehicle varchar2(20),
+tprice varchar2(20),
+tpersonnel_min varchar2(20),
+tpersonnel_max varchar2(20),
+tstart varchar2(20),
+tend varchar2(20),
+tm varchar2(2000),
+timg varchar2(2000), --이미지
+now number(1) default '0'-- 진행사항
+);
+
+--업체/여행 시퀀스
+create sequence travel_seq start with 1 increment by 1;
+
+--업체/영화 등록 테이블
+create table movie(
+num number(6), -- 시퀀스
+mplace varchar2(500), -- 지역
+mname varchar2(500), -- 영화이름
+theater varchar2(500), --극장
+mprice varchar2(500) default 10000, --가격
+mpersonnel varchar2(500), -- 제한인원
+mstart varchar2(500),--사용가능시작
+mend varchar2(500),--사용가능 끝
+monday varchar2(500),--사용
+mm varchar2(2000), --추가 입력
+mimg varchar2(2000), --이미지
+now number(1) default '0'-- 진행사항
+);
+
+--업체/영화 시퀀스
+create sequence movie_seq start with 1 increment by 1;
+
+--T 페션
+create table booking (
+num number,
+place varchar2(40),
+pname varchar2(40),
+proom varchar2(40),
+personnel varchar2(40),
+pprice number,
+checkin varchar2(40),
+checkout varchar2(40)
+);
+
+create sequence booking_seq start with 1 increment by 1;
+
+--펜션업체
+create table test_t (
+place1 varchar2(40),
+pname1 varchar2(40),
+proom1 varchar2(40),
+personnel1 varchar2(40),
+pprice1 number,
+checkin1 varchar2(40),
+checkout1 varchar2(40)
+);
+
+--T 영화
+create table mbooking (
+mnum number,
+mplace varchar2(40),
+mname varchar2(200),
+mroom varchar2(40),
+mpersonnel varchar2(40),
+mprice number,
+mday varchar2(40),
+seat varchar2(40)
+);
+create sequence mbooking_seq start with 1 increment by 1;
+
+--영화좌석
+create table seat (
+a varchar2(40),
+b varchar2(40),
+c varchar2(40),
+d varchar2(40)
+);
+
+insert into seat values('A1', 'A2', 'A3', 'A4');
+insert into seat values('B1', 'B2', 'B3', 'B4');
+insert into seat values('C1', 'C2', 'C3', 'C4');
+insert into seat values('D1', 'D2', 'D3', 'D4');
+insert into seat values('E1', 'E2', 'E3', 'E4');
+insert into seat values('F1', 'F2', 'F3', 'F4');
+insert into seat values('G1', 'G2', 'G3', 'G4');
+insert into seat values('H1', 'H2', 'H3', 'H4');
+insert into seat values('I1', 'I2', 'I3', 'I4');
+insert into seat values('J1', 'J2', 'J3', 'J4');
+
+--영화업체
+create table test_mt (
+mplace1 varchar2(40),
+mname1 varchar2(40),
+mroom1 varchar2(40),
+mpersonnel1 varchar2(40),
+mprice1 number,
+mday1 varchar2(40)
+);
+
+--여행
+create table tbooking (
+num number,
+tplace varchar2(40),
+tname varchar2(40),
+tvehicle varchar2(40),
+tpersonnel varchar2(40),
+tprice number,
+tstart varchar2(40),
+tend varchar2(40)
+);
+
+create sequence tbooking_seq start with 1 increment by 1;
+
+--사용자카드
+create table payment (
+cardnumber varchar2(40),
+cardmoney number check(cardmoney >= 0),
+cardpass number,
+banknumber number,
+bankmoney number check(bankmoney >= 0),
+bankpass number
+);
+
+insert into payment values('1234-1234-1234-1234',10000000,1234,123456789,1000,1234);
+
+--게시판
+create table mvc_board (
+bId number(6),
+bName  varchar2(40),
+bTitle  varchar2(400),
+bContent  varchar2(2048),
+bDate timestamp,
+bHit  number(6), 
+bGroup number(6), 
+bStep number(6), 
+bIndent number(6));
+
+create sequence mvc_board_seq;
+
+commit;
